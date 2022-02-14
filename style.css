@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: sans-serif;
+
+    line-height: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+    /* links will turn blue when hovered over */
+}
+
+a:active {
+    color: lightgrey;
+    /* links will turn light-grey when activated/clicked on */
+}
+
+/* a:visited {
+    color: violet;
+    when visited, the link will turn violet
+} */
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.clr {
+    clear: both;
+}
+
+.box-1 {
+    background-color: lightgrey;
+
+    /* border-right: 5px grey solid;
+    border-left: 5px grey solid;
+    border-top: 5px grey solid;
+    border-bottom: 5px grey solid; */
+
+    border: 5px solid grey;
+    border-width: 3px;
+
+    /* padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+
+    padding: 10px;
+
+    margin: 20px;
+
+    border-radius: 10px;
+}
+
+.box-1 h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 750;
+
+    text-decoration: underline;
+
+    /* text-transform: uppercase; */
+
+    /* letter-spacing: 1em; */
+}
+
+.box-2 {
+    border: 3px dotted lightgrey;
+    padding: 10px;
+    margin: 20px;
+
+    border-radius: 10px;
+}
+
+.categories {
+    border: 1px dashed lightgrey;
+    border-radius: 10px;
+
+    padding: 10px;
+    margin: 20px;
+}
+
+.categories h2 {
+    text-align: center;
+}
+
+.categories ul {
+    /* ul's by default have padding */
+
+    list-style: circle;
+    /* circular bullet points etc */
+}
+
+.categories li {
+    padding-bottom: 5px;
+    border: dashed 1px lightgrey;
+
+    /* list-style-image: url('../photos/check.png'); */
+    /* ^ imports images next to the list, would need resizing */
+}
+
+.my-form {
+    padding: 10px;
+}
+
+.my-form form-group {
+    padding-bottom: 10px;
+}
+
+.my-form label {
+    display: block;
+}
+
+.my-form input[type="text"], .my-form textarea {
+    /* type="text" disregards the button bc it is not a text area */
+    
+    padding: 10px;
+    width: 100%;
+}
+
+/* .my-form input[type="submit"] { or */ .button {
+    background-color: darkgrey;
+    color: white;
+
+    padding: 10px;
+    border: none;
+}
+
+.button:hover {
+    background: blue;
+    color: white;
+}
+
+.block {
+    float: left;
+    /* makes the text float to the left */
+   
+    width: 33.3%;
+    border: 3px solid lightgrey;
+    border-radius: 10px;
+    
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#main-block {
+    float: left;
+    width: 69%;
+
+    border: 3px solid lightgrey;
+    border-radius: 10px;
+
+    padding: 10px;
+    margin: 0.5px;
+}
+
+#sidebar {
+    float: right;
+    width: 30%;
+
+    border: 3px solid lightgrey;
+    border-radius: 10px;
+
+    padding: 10px;
+    margin: 0.5px;
+}
+
+.p-box {
+    width: 800px;
+    height: 500px;
+
+    margin-top: 10px;
+
+    border: 3px solid lightgrey;
+    border-radius: 10px;
+
+    position: relative;
+
+    /* background-image: url('../photos/bg.png');
+    background-repeat: no-repeat; */
+}
+
+.fix-me {
+    position: fixed;
+    top: 400px;
+    /* the button stays 400px from the top of the page no matter where you scroll */
+}
+
+.my-list li:first-child {
+    background: red;
+}
+
+/* .my-list li:last-child {
+    background: blue;
+} */
+
+.my-list li:nth-child(even){
+    background: violet;
+}
